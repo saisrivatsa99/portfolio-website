@@ -1,0 +1,9 @@
+.edu-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .edu-section {
+    flex-direction: column;
+  }

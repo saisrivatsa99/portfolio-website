@@ -1,0 +1,25 @@
+:root {
+    --base-text-color: #919491;
+    --accent-color: #288eec;
+    --base-bg-color: #010d17;
+    --navbar-bg-color: #1d242c;
+    --base-hover-color: #edeef2;
+    --accent-color-comp: rgba(255, 220, 138, 0.1)
+  }
+  @supports (font-variation-settings: normal) {
+    :root {
+      font-family: "Poppins", sans-serif;
+      font-feature-settings: "liga" 1, "calt" 1;
+    }
+  }
+  
+  body {
+    background-color: var(--base-bg-color);
+    color: var(--base-text-color);
+    margin: 0px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }

@@ -1,0 +1,16 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .about-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0px;
+  
+    h1 {
+      color: var(--accent-color);
+    }
+  }

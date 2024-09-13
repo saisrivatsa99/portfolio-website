@@ -1,0 +1,9 @@
+.exp-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .exp-section {
+    flex-direction: column;
+  }
