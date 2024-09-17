@@ -1,4 +1,5 @@
 import React from "react";
+import "./ContactPanel.css"
 import MailIcon from "../Icons/MailIcon";
 import GithubIcon from "../Icons/GithubIcon";
 import LinkedInIcon from "../Icons/LinkedInIcon";

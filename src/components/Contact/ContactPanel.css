@@ -1,0 +1,15 @@
+.ContactPanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+  }
+  @media only screen and (max-width: 1000px) {
+    .ContactPanel {
+        width: 100%;
+        background-color: #171c28; 
+      }
+    .contact-list {
+      background-color: #171c28; 
+    }
+  }  

@@ -1,114 +1,59 @@
-* {
-  background-color: #171c28;
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  
-}
-
-body {
-  max-height: 100vh;
-  height: 100%;
-  overflow: hidden;
-}
-.App{
-  
-  color: #afafbf;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #171c28;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/* General styles */
 .wrap {
   width: 100%;
   display: flex;
   background-color: #171c28;
-  flex-direction: row;
-  position: absolute;
+  align-items: center;
 }
 
+/* Left panel (desktop view) */
 .leftPanel {
   display: flex;
-  width: 30%; /* Take 50% of the space */
-  background-color: #171c28; /* Left panel background */
-  padding: 20px;
+  background-color: #171c28;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  overflow: hidden;
+  align-items: center;
 }
 
+/* Right panel (desktop view) */
 .rightPanel {
-  width: 65%; 
-  padding: 3% 3% 3% 3%;
-  height: 100vh; 
   overflow-y: auto;
 }
 
-.ContactPanel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 5%;
+
+
+/* Desktop view (min-width: 800px) */
+@media only screen and (min-width: 1000px) {
+  .wrap {
+    flex-direction: row; /* Side-by-side layout */
+  }
+
+  .leftPanel {
+    width: 30%; /* Left panel takes 30% width */
+  }
+
+  .rightPanel {
+    width: 65%; /* Right panel takes 65% width */
+    max-height: 100vh;
+    padding: 0% 3% 0% 3%;
+  }
 }
 
-.rightPanel::-webkit-scrollbar {
-  width: 0;
-  background: transparent; /* Optional: make scrollbar area transparent */
-}
+/* Mobile view (max-width: 800px) */
+@media only screen and (max-width: 1000px) {
+  .wrap {
+    flex-direction: column; /* Stack all panels vertically */
+    overflow-y: scroll;
+  }
 
-.about {
-  font-size: 1.02em;  
-  word-spacing: 0.2em;
-  
-}
-.noMarker {
-  list-style-type: none;
-}
-
-.dp {
-  height: 300px;
-  width: 300px;
-  box-shadow: 10px 10px;
-  border-radius: 12px;
-  opacity: 80%;
-}
-
-.about {
-  padding-bottom: 3%;
+  .leftPanel, .contactPanel {
+    width: 90%; /* Each panel takes 90% width */
+    margin: 0 auto; /* Center content */
+  }
+  .rightPanel{
+    width: 90%; /* Each panel takes 90% width */
+    margin: 0 auto; /* Center content */
+    padding-bottom: 70px;
+  }
 }

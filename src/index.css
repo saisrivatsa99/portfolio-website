@@ -1,5 +1,5 @@
 :root {
-    --base-text-color: #919491;
+    --base-text-color: #afafbf;
     --accent-color: #288eec;
     --base-bg-color: #010d17;
     --navbar-bg-color: #1d242c;
@@ -8,7 +8,7 @@
   }
   @supports (font-variation-settings: normal) {
     :root {
-      font-family: "Poppins", sans-serif;
+      font-family: "Noto Sans", sans-serif;
       font-feature-settings: "liga" 1, "calt" 1;
     }
   }

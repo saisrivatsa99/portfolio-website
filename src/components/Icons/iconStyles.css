@@ -21,7 +21,8 @@
   }
   
   .contact-list li {
-    margin-bottom: 100px; /* Increase the space between icons */
+    margin-top: 50px;
+    margin-bottom: 50px; /* Increase the space between icons */
     width: 100%; /* Each list item takes full width */
   }
   
@@ -36,3 +37,30 @@
     height: auto; /* Maintain aspect ratio */
   }
   
+
+  
+  @media only screen and (max-width: 1000px) {
+    .contact-list {
+      flex-direction: row;
+      justify-content: space-around; /* Spread the icons horizontally */
+      align-items: center;
+      padding: 10px 0; /* Add padding */
+      margin: 0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%; /* Full width at the bottom of the screen */
+      z-index: 1000; /* Ensure it stays above other elements */
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Add shadow to give depth */
+    }
+  
+    .contact-list li {
+      margin: 0; /* Remove extra margin */
+      width: auto; /* Let icons adjust to their content */
+    }
+  
+    .contact-list svg {
+      width: 30px; /* Resize icons for mobile */
+    }
+  
+  }

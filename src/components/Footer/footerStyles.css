@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: small;
+      span {
+        color: var(--accent-color);
+      }
+    }
+  }

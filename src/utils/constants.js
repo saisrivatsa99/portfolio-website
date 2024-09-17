@@ -1,7 +1,7 @@
 const about =[
     "I am a software engineer specializing in building full-stack applications and cloud computing, currently based in Virginia, USA. Before moving to the United States to pursue my Master's degree, I worked at Tata Consultancy Services as a developer for Apple, where I worked with various technologies and tools to build resilient backend systems. My fascination with software began at a young age through video games, sparking a lifelong passion for technology and its potential to create impactful experiences.",
     "My current focus is on developing end-to-end applications that are resilient, robust, and scalable. I take pride in creating software that is both visually appealing and highly functional. Designing systems to achieve this balance is something I thoroughly enjoy. Parallely, I am delving into the world of Large Language Models (LLMs) and AI to keep up with the latest industry trends.",    
-    "When I'm not working on real-world applications or personal projects, I enjoy gaming, working out, reading intriguing case studies, or spending time with friends playing badminton."
+    "When I'm not working on real-world applications or personal projects, I enjoy staying active through gaming, working out, and playing badminton. I also find inspiration in cooking new recipes, exploring hiking trails, and traveling to experience different cultures. Whether it's watching thought-provoking movies or tuning into podcasts and Spotify playlists, I always seek ways to broaden my perspective and keep my creativity flowing."
 ];
 
 
@@ -22,7 +22,10 @@ const expArray = [
         "EC2",
         "S3",
         "RDS",
-        "Lambda"
+        "Lambda",
+        "Git",
+        "CI/CD",
+        "SSO"
       ],
       desc: "Designed and developed scalable web applications for Your House Fitness, using React, Node.js, Express, and PostgreSQL. Implemented RESTful APIs to support front-end functionality and enhance user experience while collaborating with UI/UX designers to create responsive and intuitive web pages. Deployed and managed applications on AWS, utilizing EC2, S3, RDS, and Lambda services.",
       url: "https://epics.engineering.asu.edu/"
@@ -53,7 +56,7 @@ const expArray = [
         dateFrom: "JUN 2019",
         dateTo: "AUG 2019",
         title: "Full Stack Developer Intern",
-        company: "ADP India Ltd.",
+        company: "ADP, Inc.",
         location: "Hyderabad, Telangana, India",
         skills: [
           "HTML",

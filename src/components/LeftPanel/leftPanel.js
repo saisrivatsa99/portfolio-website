@@ -6,7 +6,7 @@ export default function LeftPanel(){
         <div className="leftPanel">
             <div className="intro-container">
                 <div className="intro-pic">
-                    <img src="/DP.jpg" alt="Portfolio Display Picture" />
+                    <img src="/dp_square.jpg" alt="Portfolio DP" />
                 </div>
                 <div className="intro-desc">
                     <h1>Srivatsa Pantangi</h1>
@@ -15,7 +15,7 @@ export default function LeftPanel(){
                         Building robust and scalable full stack applications to 
                         deliver exceptional user experience.
                     </p>
-                    <a className="intro-url" target="__blank" href="/Srivatsa_Pantangi_Resume.pdf">
+                    <a className="intro-url" target="_blank" href="Srivatsa_Pantangi_Resume.pdf">
                         <span>View Resume &#8594;</span>
                     </a>
                 </div>
