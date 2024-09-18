@@ -6,7 +6,7 @@ export default function LeftPanel(){
         <div className="leftPanel">
             <div className="intro-container">
                 <div className="intro-pic">
-                    <img src="/dp_square.jpg" alt="Portfolio DP" />
+                    <img src="/DP.jpg" alt="Portfolio DP" />
                 </div>
                 <div className="intro-desc">
                     <h1>Srivatsa Pantangi</h1>
